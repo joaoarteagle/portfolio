@@ -1,7 +1,9 @@
-img{
+.links img{
     width: 25px;
+    filter: invert(100);
 
 }
+
 
 a, a:hover{
     text-decoration: none;
@@ -15,6 +17,7 @@ h1{
     font-size: 100px;
     font-family: Anton;
     font-weight: bold;
+    color: rgba(254, 254, 254, 0.981);
 }
 
 h4{
@@ -23,12 +26,20 @@ h4{
     width: 5em;
     font-size: medium;
     border-radius: 15px;
-    background-color: rgba(137, 43, 226, 0.212);
-    color: rgb(74, 0, 143);
+    background-color: rgba(72, 49, 93, 0.63);
+    color: rgb(131, 0, 254);
+}
+
+h2{
+    color: antiquewhite;
+}
+
+p{
+    color: rgba(197, 197, 197, 0.512);
 }
 
 section{
-    margin-top: 10vh;
+    margin-top: 15vh;
     padding: 5vh;
 }
 
@@ -36,4 +47,22 @@ section{
     display: flex;
     justify-content: space-evenly;
     width: 15vh;
+}
+
+body{
+    background:linear-gradient(to right, #1a002e, #1a0046d6);
+}
+
+#Home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.photo img{
+    object-fit: cover;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 25vh;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.085);
 }
