@@ -20,6 +20,7 @@ h1{
     color: rgba(254, 254, 254, 0.981);
 }
 
+
 h4{
     display: flex;
     justify-content: center;
@@ -103,4 +104,49 @@ main{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(179, 0, 255, 0.353);
+    height: 15vh;
+    
+}
+
+footer img{
+    filter: invert(100);
+    width: 5vh;
+}
+footer a, footer a:active, footer a:hover{
+    cursor: pointer;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+@media screen and (min-width:200px) and (max-width:500px) {
+    h1{
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+    }
+    
+    .photo img{
+        
+        width: 25vh;
+        height: 25vh;
+    }
+
+    .secOne h4{
+        display: none;
+    }
+    .secOne{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
