@@ -1,0 +1,39 @@
+img{
+    width: 25px;
+
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: transparent;
+}
+
+h1{
+    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 100px;
+    font-family: Anton;
+    font-weight: bold;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    width: 5em;
+    font-size: medium;
+    border-radius: 15px;
+    background-color: rgba(137, 43, 226, 0.212);
+    color: rgb(74, 0, 143);
+}
+
+section{
+    margin-top: 10vh;
+    padding: 5vh;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 15vh;
+}
