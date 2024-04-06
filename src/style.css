@@ -1,17 +1,22 @@
 .links img{
     width: 25px;
     filter: invert(100);
-
+    transition: transform 0.1s ease-in;
+    
 }
-
+.links img:hover{
+    transform: scale(1.1);
+    
+}
 
 .linkImgs, .linkImgs:hover{
     text-decoration: none;
     color: transparent;
+    
 }
 
 h1{
-    width: 35vw;
+    width: 50vh;
     display: flex;
     flex-wrap: wrap;
     font-size: 100px;
@@ -46,14 +51,32 @@ section{
     justify-content: center;
     flex-direction: column;
     min-height:80vh ;
-    margin-top: 25vh;
     padding: 5vh;
+
+    opacity: 0; /* Começa com opacidade 0 para aplicar o efeito de fade in */
+  transform: translateY(-20px); /* Começa com translateY -20px para aplicar o efeito de deslizamento */
+  animation: fadeIn 1s ease-in-out forwards; /* Aplica a animação de fadeIn */
+}
+
+#SobreMim{
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 86vh;
+    gap: 16px;
+}
+
+#SobreMim p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .links{
     display: flex;
     justify-content: space-evenly;
-    width: 15vh;
+    width: 100px;
 }
 
 body{
@@ -65,19 +88,31 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
+    gap: 100px;
     justify-content: space-around;
     margin-top: 20px;
 }
 
+
+
 .photo img{
     object-fit: cover;
-    width: 50vh;
-    height: 50vh;
-    border-radius: 25vh;
-    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.085);
+    width: 60vh;
+    height: 60vh;
+    border-radius: 30vh 30vh; 
+    box-shadow: 5px 15px 50px rgba(255, 255, 255, 0.205);
+    background:linear-gradient(to top right , rgb(50, 3, 50), rgb(211, 87, 253), rgb(69, 69, 255)) ; 
+    filter: saturate(130%);
+
 }
 
+
 main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100vh;
     margin-top: 20px;
 
 }
@@ -105,6 +140,26 @@ main{
     flex-direction: column;
     justify-content: center;
 }
+#Projetos #projectBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10vh;
+} 
+
+#projectBox img{
+    object-fit: contain;
+    transition: filter 0.3s ease-in-out;
+    width: 40vh;
+    height: 60vh;
+
+}
+
+#projectBox img:hover{
+    filter: brightness(50%);
+}
+
 
 footer{
     display: flex;
@@ -127,26 +182,40 @@ footer a, footer a:active, footer a:hover{
     text-decoration: none;
 }
 
-@media screen and (min-width:200px) and (max-width:500px) {
+@media screen and  (max-width:768px) {
+
+
     h1{
+        display: flex;
         align-items: center;
         justify-content: center;
         font-size: 60px;
     }
     
-    .photo img{
-        
-        width: 25vh;
-        height: 25vh;
+    .photo img{    
+        width: 30vh;
+        height: 30vh;
+        margin: 5vh 0;
     }
 
-    .secOne h4{
-        display: none;
-    }
+
     .secOne{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
+ 
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
