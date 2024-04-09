@@ -1,3 +1,12 @@
+body{
+    min-width:320px;
+    background:linear-gradient(to right, #1a002e, #1a0046d6);
+
+
+}
+
+
+
 .links img{
     width: 25px;
     filter: invert(100);
@@ -16,7 +25,7 @@
 }
 
 h1{
-    width: 50vh;
+    width: 40vh;
     display: flex;
     flex-wrap: wrap;
     font-size: 100px;
@@ -68,9 +77,20 @@ section{
 #SobreMim p {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 16px;
+    /* justify-content: center;*/
+    flex-direction: column; 
+}
+
+p a{
+    display: flex;
+}
+
+p strong{
+    font-size: large;
+}
+
+p{
+    gap: 12px;
 }
 
 .links{
@@ -79,10 +99,7 @@ section{
     width: 100px;
 }
 
-body{
- background:linear-gradient(to right, #1a002e, #1a0046d6);
 
-}
 
 #Home{
     display: flex;
@@ -105,15 +122,37 @@ body{
     filter: saturate(130%);
 
 }
+#NavBar{
+    overflow: hidden;
+    z-index: 9999;
+}
+#NavBar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
 
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+ .sticky + main{
+    padding-top: 60px;
+ }
 
 main{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 100vh;
+    gap: 80vh;
     margin-top: 20px;
+    min-width: 320px
 
 }
 
@@ -143,7 +182,7 @@ main{
 #Projetos #projectBox{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 10vh;
 } 
@@ -182,7 +221,7 @@ footer a, footer a:active, footer a:hover{
     text-decoration: none;
 }
 
-@media screen and  (max-width:768px) {
+@media screen and (max-width:800px) {
 
 
     h1{
@@ -206,7 +245,17 @@ footer a, footer a:active, footer a:hover{
         justify-content: center;
     }
 
- 
+    main{
+        gap: 100%;
+    }
+
+    #Home{
+        max-width: 50vh;
+        margin: 0;
+        gap: 0;
+        min-width: 319px;
+    }
+
 }
 
 @keyframes fadeIn {

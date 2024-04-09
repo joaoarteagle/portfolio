@@ -23,7 +23,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="NavBar"  class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#Home">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -33,9 +33,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#SobreMim">Sobre Mim</a>
-                    <a class="nav-link active" aria-current="page" href="#Skills">Skills</a>
                     <a class="nav-link active" aria-current="page" href="#Projetos">Projetos</a>
-                    <a class="nav-link active" aria-current="page" href="#Tech">Tecnologias</a>
+                    <a class="nav-link active" aria-current="page" href="#SoftSkills">Skills</a>
+                    <a class="nav-link active" aria-current="page" href="#HardSkills">Hard-Skills</a>
                     <a class="nav-link active" aria-current="page"
                         href="https://wa.me/5544998528822?text=Ol%C3%A1+Jo%C3%A3o+Paulo" target="_blank">Contato</a>
                 </div>
@@ -75,70 +75,87 @@
         <section id="SobreMim">
             <h2>Sobre Mim</h2>
             <p>Meu nome é João Paulo de Andrade Gonçalves e tenho 19 anos</p>
-            <p>Estudante de Engenharia de Software na 
+            <p>Estudante de Engenharia de Software na
                 <a id="unicesumar" href="https://www.unicesumar.edu.br/"target="_blank">Unicesumar</a>
-                 Gosto de aprender novas tecnologias e formas de ser uma pessoa melhor
- sou uma pessoa otimista e carismática, tenho como próximo objetivo <strong>Ser Programador Full-Stack</strong> </p>
-        </section>
-
-        <section id="Skills">
-            <h2>Skills</h2>
-
-            <div></div>
-            <div></div>
-            <div></div>
+                Gosto de aprender novas tecnologias e formas de ser uma pessoa melhor
+                sou uma pessoa otimista e carismática, tenho como próximo objetivo
+                <strong>Ser Programador Full-Stack</strong>
+            </p>
         </section>
 
         <section id="Projetos">
             <h2>Projetos</h2>
-
+    
             <div id="projectBox">
                 <div id="squirtleProject">
-                   <a href="https://joaoarteagle.github.io/esoft5s-bw-a/" target="_blank" rel="noopener noreferrer"><img src="img/squirtleProject.png" alt=""></a> 
+                    <a href="https://joaoarteagle.github.io/esoft5s-bw-a/" target="_blank"
+                        rel="noopener noreferrer"><img src="img/squirtleProject.png" alt=""></a>
                 </div>
                 <div id="todoList">
-                    <a href="https://joaoarteagle.github.io/Projeto-To_Do-List/src/html/index.html#" target="_blank" rel="noopener noreferrer"> <img src="img/to-dolist.png" alt=""></a>
+                    <a href="https://joaoarteagle.github.io/Projeto-To_Do-List/src/html/index.html#" target="_blank"
+                        rel="noopener noreferrer"> <img src="img/to-dolist.png" alt=""></a>
                 </div>
                 <div></div>
             </div>
         </section>
 
-        <section id="Tech">
-            <h2>Tecnologias</h2>
-            <h5>(Mais Utilizadas)</h5>
+        <section id="SoftSkills">
+            <h2>Soft-Skills</h2>
 
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        
+        <section id="HardSkills">
+            <h2>Hard-Skills</h2>
+            
+            
             <div id="TechBox">
                 <div class="TechItem">
                     <h4>JAVA</h4>
-                    <img class="techImg" src="img/java.png" alt="">
+                    <img class="techImg" src="img/java.png" alt="Java">
                 </div>
-
+                
                 <div class="TechItem">
                     <h4>HTML</h4>
-                    <img class="techImg" src="img/html.png" alt="">
+                    <img class="techImg" src="img/html.png" alt="HTML">
                 </div>
-
+                
                 <div class="TechItem">
                     <h4>CSS</h4>
-                    <img class="techImg" src="img/css-3.png" alt="">
+                    <img class="techImg" src="img/css-3.png" alt="CSS">
                 </div>
-
+                
                 <div class="TechItem">
                     <h4>JavaScript</h4>
-                    <img class="techImg" src="img/js.png" alt="">
+                    <img class="techImg" src="img/js.png" alt="Javascript">
                 </div>
-
+                
                 <div class="TechItem">
                     <h4>TypeScript</h4>
-                    <img class="techImg" src="img/typescript-def.png" alt="">
+                    <img class="techImg" src="img/typescript-def.png" alt="TypeScript">
+                </div>
+                
+                <div class="TechItem">
+                    <h4>Bootstrap</h4>
+                    <img class="techImg" src="img/bootstrap-5-logo-icon.webp" alt="Bootstrap">
                 </div>
 
                 <div class="TechItem">
-                    <h4>Bootstrap</h4>
-                    <img class="techImg" src="img/bootstrap-5-logo-icon.webp" alt="">
+                    <h4>Postgrees</h4>
+                    <img class="techImg" src="img/postgre.png" alt="Postgrees">
+                </div>
+
+                <div class="TechItem">
+                    <h4>MongoDB</h4>
+                    <img class="techImg" src="img/mongodb-icon-1.svg" alt="MongoDB">
                 </div>
             </div>
         </section>
+        
+       
 
     </main>
     <footer>
@@ -154,9 +171,14 @@
             </a>
         </p>
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    
+    
+   <script src="../build/index.js"></script>
 </body>
 
 </html>
