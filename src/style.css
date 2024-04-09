@@ -191,14 +191,7 @@ main{
     cursor: pointer;
     background-color: #f2f2f227;
 }
-.progress{
-    height: 1vh;
-    width: 15vh;
 
-}
-.progress-bar{
-    background-color: #1a002e;
-}
 
 #Projetos #projectBox{
     display: flex;
