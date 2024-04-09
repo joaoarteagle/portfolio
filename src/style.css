@@ -150,7 +150,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 80vh;
+    gap: 30vh;
     margin-top: 20px;
     min-width: 320px
 
@@ -171,14 +171,35 @@ main{
     justify-content:space-evenly ;
 }
 .techImg{
+    object-fit: contain;
     width: 10vh;
+    height: 10vh;
 }
 .TechItem{
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 20vh;
+    height: 30vh;
+    padding: 10px;
+    border-radius: 10% 10%;
     justify-content: center;
+    gap: 15px;
 }
+
+.TechItem:hover{
+    cursor: pointer;
+    background-color: #f2f2f227;
+}
+.progress{
+    height: 1vh;
+    width: 15vh;
+
+}
+.progress-bar{
+    background-color: #1a002e;
+}
+
 #Projetos #projectBox{
     display: flex;
     align-items: center;
