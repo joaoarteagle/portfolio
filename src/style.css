@@ -1,3 +1,5 @@
+
+
 body{
     min-width:320px;
     background:linear-gradient(to right, #1a002e, #1a0046d6);
@@ -156,6 +158,29 @@ main{
 
 }
 
+.card-body {
+    height: 30vh;
+    background-color: #1c1921;
+    transition: transform 0.3s ease-in;
+}
+
+.card-body:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#SoftSkills .SoftSkillsContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+cite{
+    color: #ffffff9e;
+}
+
 #unicesumar, #unicesumar:hover{
     text-decoration: none;
     color: aquamarine;
@@ -174,13 +199,18 @@ main{
     object-fit: contain;
     width: 10vh;
     height: 10vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+.techImg:hover{
+    transform: scale(1.1);
 }
 .TechItem{
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 20vh;
-    height: 30vh;
+    height: 20vh;
     padding: 10px;
     border-radius: 10% 10%;
     justify-content: center;
@@ -190,6 +220,11 @@ main{
 .TechItem:hover{
     cursor: pointer;
     background-color: #f2f2f227;
+}
+.TechItem:hover h4{
+    color: #1a002e;
+    background-color: transparent;
+    filter: drop-shadow(5px 15px 50px rgb(0, 0, 0));
 }
 
 
@@ -263,7 +298,7 @@ footer a, footer a:active, footer a:hover{
         gap: 100%;
     }
 
-    #Home{
+    section{
         max-width: 50vh;
         margin: 0;
         gap: 0;
