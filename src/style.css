@@ -342,9 +342,10 @@ footer a, footer a:active, footer a:hover{
 
     .TechItem{
         width: 75px;
+        height: 100px;
     }
     .techImg{
-        width: 50px;
+        width: 40px;
     }
 }
 
