@@ -71,6 +71,7 @@ section{
 
 
 
+
 #SobreMim{
     text-align: center;
     flex-wrap: wrap;
@@ -129,6 +130,12 @@ p{
 #NavBar{
     overflow: hidden;
     z-index: 9999;
+    
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+.bg-dark{
+    background-color: transparent;
 }
 #NavBar a {
     float: left;
@@ -140,10 +147,15 @@ p{
     font-size: 17px;
   }
 
+
+
+
+
 .sticky{
     position: fixed;
     top: 0;
     width: 100%;
+   
 }
  .sticky + main{
     padding-top: 60px;
@@ -251,6 +263,15 @@ cite{
     gap: 10vh;
 } 
 
+
+.projectItem a{
+    display: flex;
+}
+
+#teste {
+    position: fixed;
+}
+
 #projectBox img{
     object-fit: contain;
     transition: filter 0.3s ease-in-out;
@@ -259,9 +280,13 @@ cite{
 
 }
 
+
+
+
 #projectBox img:hover{
     filter: brightness(50%);
 }
+
 
 
 footer{
